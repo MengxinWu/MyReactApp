@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // 设定组件样式
 const buttonStyle = {
@@ -16,6 +17,13 @@ function Counter(props) {
       <span>{caption} count: {count}</span>
     </div>
   );
+}
+
+Counter.propTypes = {
+  caption: PropTypes.string.isRequired,
+  onClickIncrementButton: PropTypes.func.isRequired,
+  onClickDecrementButton: PropTypes.func.isRequired,
+  count: PropTypes.number.isRequired
 }
 
 // 导出展示组件Counter

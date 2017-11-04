@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 import PropTypes from 'prop-types';
 
 // 创建自定义组件Provider，提供context供所有下层组件访问
